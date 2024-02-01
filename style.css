@@ -1,0 +1,60 @@
+/*psudoclase y psudoelemento*/
+/*Pesudoclase modifica el estado a un elmento independientemente de su estado por defecto*/
+
+.enlace{
+    color: blue;
+}
+
+/*elementoHTML pseudoclase*/
+
+.enlace:visited{
+    color: aquamarine;
+    text-decoration: underline;
+
+}
+/*cuando pasa el mouse por encima*/
+.enlace:hover{
+    /*cambia el formato de la flechtia del cursor*/
+    cursor: pointer;
+    background-color: burlywood;
+}
+
+/*se activa cuando pulsa con el mouse sobre el elemento*/
+.enlace:active{
+    font-size: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 10%;
+    padding: 10px;
+
+}
+
+img:hover{
+    transform: scale(3);
+    
+
+
+
+
+}
+
+
+
+
+
+
+/*:: psuedoelementos sumo estilos a un elemento html*/
+p::first-line{
+    color: red;
+}
+
+p::first-letter{
+    text-transform: uppercase;
+}
+/*pseudoelementos after y beferenos habilitan la propiedad content*/
+h1:hover::before{
+    content: '23 de enero de 2024';
+}
+h1:hover::after{
+    content: 'A';
+}
